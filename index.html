@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="query.css">
+
+</head>
+<body>
+
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <a href="#" class="logo">Momoting</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a class="mode"><i class="fa-regular fa-moon"></i></a>
+            
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content" data-animation="fadeInFromBottom">
+            <h3>Hi, I am</h3>
+            <h1>Gimril Lozarita</h1>
+            <h3>And I'm a <span>3rd Year CPE Student</span></h3>
+            <p>I'm passionate and skilled about coding and software development at Mapua Malayan Colleges Mindanao.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Glozarita11" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/momoting11/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/gimril-lozarita-a4596a2a7/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/C4rboncopier" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="home-img" data-animation="fadeInFromRight">
+            <img src="img/pfp.png" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2 class="heading" data-animation="fadeInFromTop">About <span>Me</span></h2>
+
+        <div class="about-content">
+            <div class="education" data-animation="fadeInFromLeft">
+                <h3>Education</h3>
+                <h4>• Mapua Malayan Colleges Mindanao</h4>
+                <h5>◦ College - Bachelor of Science (BS), Computer Engineering</h5>
+                <p>2022 - Present</p>
+                <div class="languages">
+                    <span class="language-block">Software Engineering</span>
+                    <span class="language-block">Web Development</span>
+                    <span class="language-block">Python</span>
+                    <span class="language-block">C</span>
+                    <span class="language-block">C++</span>
+                    <span class="language-block">C#</span>
+                    <span class="language-block">Java</span>
+                </div>
+                <h5>◦ Senior High School - Science, Technology, Engineering and Mathematics (STEM)</h5>
+                <p>2020 - 2022</p>
+                <h4>• Holy Child College of Davao</h4>
+                <p>2009 - 2020</p>
+            </div>
+
+            <div class="experience" data-animation="fadeInFromRight">
+                <h3>Experience</h3>
+                <h4>• Mapua Malayan Colleges Mindanao</h4>
+                <h5>◦ ICpEP.SE Director of Systems Development</h5>
+                <p>2024 - Present</p>
+                <p class="description">
+                    Currently serving as the Director of Systems Development for the Institute of Computer Engineers of the Philippines - 
+                    Student Edition (ICpEP.SE). Our department is responsible for the development of the organization's systems based on the requirements.
+                </p>
+                <h5>◦ ICpEP.SE Technical Department Member</h5>
+                <p>2024 - Present</p>
+                <p class="description">
+                    While being the Director of Systems Development, I am also a member of the Technical Department that is responsible for the technical aspects of the organization.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2 class="heading" data-animation="fadeInFromTop">My <span>Skills</span></h2>
+
+        <div class="skills-container" data-animation="fadeInFromBottom">
+            <div class="skills-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Languages</h3>
+                <p>As a Computer Engineering student, I have developed a strong foundation in programming and web development. I am skilled in multiple languages including Python, C, C++, C#, and Java, with hands-on experience in building efficient and scalable software solutions. My passion for coding and problem-solving drives me to continuously improve and expand my expertise in the field.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database</h3>
+                <p>I have hands-on experience working with MySQL, SQLite, and Firestore. I utilize MySQL for complex relational database queries, SQLite for lightweight local database solutions, and Firestore for scalable real-time database operations. My expertise allows me to design and manage efficient databases that support various applications.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Tools</h3>
+                <p>I actively use Git for version control and Visual Studio along with Visual Studio Code for C# development and web projects. I work with Eclipse for Java and PyCharm for Python programming. Additionally, I have beginner experience with Android Studio as I explore mobile app development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading" data-animation="fadeInFromTop">Latest <span>Projects</span></h2>
+        
+        <div class="portfolio-container" data-animation="fadeInFromBottom">
+            <div class="portfolio-box">
+                <img src="img/1.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Mapua Invaders</h4>
+                    <p>A LibGDX-based game where players control a spaceship to shoot down alien invaders and retrieve stolen laboratory tasks.</p>
+                    <a href="https://github.com/C4rboncopier/Mapua-Invaders" target="_blank" rel="noopener noreferrer" class="icon-link">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/2.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>BookWise</h4>
+                    <p>A bookstore management system developed in C# that enhances efficiency and productivity for modern bookshops.</p>
+                    <a href="https://github.com/C4rboncopier/BookWise" target="_blank" rel="noopener noreferrer" class="icon-link">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/3.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Enrollment System</h4>
+                    <p>A C#-based system designed to enhance productivity and organize the enrollment process for both students and administrators.</p>
+                    <a href="https://github.com/C4rboncopier/Enrollment-System" target="_blank" rel="noopener noreferrer" class="icon-link">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/4.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>RFID Registration</h4>
+                    <p>A registration system for CPE students designed to securely store student data in Firebase.</p>
+                    <a href="https://github.com/C4rboncopier/CPE-RFID" target="_blank" rel="noopener noreferrer" class="icon-link">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/5.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Personal Website</h4>
+                    <p>My personal website and portfolio page as a student.</p>
+                    <a href="https://github.com/C4rboncopier/Portfolio" target="_blank" rel="noopener noreferrer" class="icon-link">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @Momoting | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="https://www.facebook.com/Glozarita11" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/momoting11/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/gimril-lozarita-a4596a2a7/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/C4rboncopier" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
