@@ -34,23 +34,47 @@ navLinks.forEach(link => {
 
         sections.forEach(section => section.classList.add('hidden'));
 
-        const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
         targetSection.classList.remove('hidden');
 
         setTimeout(() => {
             const headerHeight = document.querySelector('header').offsetHeight;
-            const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+            const targetPosition = targetSection.getBoundingClientRect().top - headerHeight;
 
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
             });
+
+            history.pushState({section: targetId}, null, `/${targetId}`);
         }, 50);
 
         closeNavbar();
     });
 });
+
+window.onpopstate = (event) => {
+    const targetId = event.state ? event.state.section : 'home';
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+        sections.forEach(section => section.classList.add('hidden'));
+        targetSection.classList.remove('hidden');
+        
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const targetPosition = targetSection.getBoundingClientRect().top - headerHeight;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href').substring(1) === targetId);
+        });
+    }
+};
 
 window.onscroll = () => {
     let header = document.querySelector('header');
@@ -86,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const observer = new IntersectionObserver(handleAnimation, {
-        threshold: 0.1
+        threshold: 0.1 
     });
 
     const animatedElements = document.querySelectorAll('.heading, .home-content, .home-img, .education, .experience, .skills-container, .portfolio-container');
